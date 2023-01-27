@@ -1,0 +1,9 @@
+{
+	"name": "adf-learning-gabriel01",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "554f8db2-4cfc-4a9e-99ad-61f129bf5015",
+		"tenantId": "cf36141c-ddd7-45a7-b073-111f66d0b30c"
+	}
+}
