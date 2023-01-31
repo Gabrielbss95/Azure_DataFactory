@@ -35,7 +35,140 @@
 							"type": "ParquetWriteSettings"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Region",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Region",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Country",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Country",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Item Type",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ItemType"
+								}
+							},
+							{
+								"source": {
+									"name": "Sales Channel",
+									"type": "String"
+								},
+								"sink": {
+									"name": "SalesChannel"
+								}
+							},
+							{
+								"source": {
+									"name": "Order Priority",
+									"type": "String"
+								},
+								"sink": {
+									"name": "OrderPriority"
+								}
+							},
+							{
+								"source": {
+									"name": "Order Date",
+									"type": "String"
+								},
+								"sink": {
+									"name": "OrderDate"
+								}
+							},
+							{
+								"source": {
+									"name": "Order ID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "OrderID"
+								}
+							},
+							{
+								"source": {
+									"name": "Ship Date",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ShipDate"
+								}
+							},
+							{
+								"source": {
+									"name": "Units Sold",
+									"type": "String"
+								},
+								"sink": {
+									"name": "UnitsSold"
+								}
+							},
+							{
+								"source": {
+									"name": "Unit Price",
+									"type": "String"
+								},
+								"sink": {
+									"name": "UnitPrice"
+								}
+							},
+							{
+								"source": {
+									"name": "Unit Cost",
+									"type": "String"
+								},
+								"sink": {
+									"name": "UnitCost"
+								}
+							},
+							{
+								"source": {
+									"name": "Total Revenue",
+									"type": "String"
+								},
+								"sink": {
+									"name": "TotalRevenue"
+								}
+							},
+							{
+								"source": {
+									"name": "Total Cost",
+									"type": "String"
+								},
+								"sink": {
+									"name": "TotalCost"
+								}
+							},
+							{
+								"source": {
+									"name": "Total Profit",
+									"type": "String"
+								},
+								"sink": {
+									"name": "TotalProfit"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
