@@ -24,14 +24,18 @@
 						"formatSettings": {
 							"type": "BinaryReadSettings",
 							"compressionProperties": {
-								"type": "ZipDeflateReadSettings"
+								"type": "ZipDeflateReadSettings",
+								"preserveZipFileNameAsFolder": false
 							}
 						}
 					},
 					"sink": {
-						"type": "BinarySink",
+						"type": "ParquetSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
 						}
 					},
 					"enableStaging": false
@@ -44,7 +48,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Binary_generic",
+						"referenceName": "Parquet1",
 						"type": "DatasetReference"
 					}
 				]
